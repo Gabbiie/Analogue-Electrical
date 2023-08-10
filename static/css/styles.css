@@ -1,0 +1,506 @@
+/* Style for headings using Montserrat Bold */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* Fallback to sans-serif if Montserrat is not available */
+    font-weight: 600; /* Bold font weight */
+}
+
+/* Style for other text using Montserrat Regular */
+body, p, span, div {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+
+}
+
+
+/* Set a fixed height for the carousel images */
+.carousel-inner img {
+  max-height: 500px; /* Adjust this value to your desired height */
+  width: 100%; /* Ensures the image scales properly within the container */
+  object-fit: cover; /* Keeps the aspect ratio and fills the container */
+}
+
+/* Add background color to carousel caption */
+.carousel-caption {
+  text-align: center !important;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity and color as needed */
+  padding: 10px; /* Add some padding to create a visual separation */
+  border-radius: 5px; /* Optionally, add rounded corners for a better look */
+}
+
+/* Adjust the color of the subheading text for better contrast */
+.carousel-caption h1, .carousel-caption p {
+  color: #fff; /* Change the color to white or any other suitable color */
+}
+
+#myCarousel {
+  margin-bottom: 100px; /* Adjust this value to create the desired spacing */
+}
+
+/* Add space between stacked columns on smaller screens */
+@media (max-width: 767.98px) {
+  .col-lg-4 {
+    margin-bottom: 50px;
+  }
+}
+
+/* Increase padding between hr elements and features */
+.featurette-divider {
+  margin: 100px 0;
+}
+
+/* Specific custom class */
+.custom-padding-left {
+  padding-left: 1rem;
+}
+
+/* Change the color of the links to white */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-heading {
+  color: #61677A;
+}
+
+
+.layout-container {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #d12626;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  margin-right: 15px; /* Optional spacing between menu items */
+}
+
+/* Optionally, adjust the font size or other styles to fit your design */
+.menu-item a {
+  font-size: 16px;
+}
+
+/* Center the heading and subheading services-section */
+.container.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Add some spacing between the heading and subheading */
+.container.section-title h2 {
+  margin-bottom: 10px;
+}
+
+/* Add lines on the left and right of the services heading */
+.container.section-title h2::before,
+.container.section-title h2::after {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 60px;
+  background-color: #d12626; /* Adjust the color as needed */
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.service-item .icon {
+  padding-right: 50px; /* Adjust the value as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Optional: Add some margin to the bottom of the service item to create space between each item */
+.service-item {
+  margin-bottom: 20px;
+}
+
+/* Add padding between the section headings and the items */
+.section-title {
+  margin-bottom: 70px; /* Adjust the value as needed */
+}
+
+.about {
+  margin-bottom: 100px;
+}
+
+#services {
+  background-color: #EEEDED; /* Replace this with your desired background color */
+  margin-bottom: 50px;
+}
+
+#services h2 {
+  padding-top: 40px; /* Adjust the value as needed */
+}
+
+/* Flexbox container for the heading and lines */
+.heading-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Style for the lines */
+.heading-line {
+  flex: 1;
+  height: 2px;
+  background-color: #d12626; /* Adjust the color as needed */
+  max-width: 60px;
+  margin: 5px 2px;
+}
+
+/* Style for the heading text */
+.heading-text {
+  padding: 0 10px;
+  background-color: white;
+}
+
+/* Add padding between heading and first feature in the features section */
+.featurette {
+  margin-top: 100px; /* Adjust the value as needed */
+}
+
+#contact {
+  background-color: #EEEDED; /* Replace this with your desired background color */
+  margin-bottom: 50px;
+}
+
+.contact-heading {
+  padding-top: 30px;
+}
+
+/* Custom CSS for reducing space between paragraphs in store details */
+.info-item p {
+  margin-bottom: 2px;
+}
+
+/* Add this CSS to make the send button longer */
+#submit_button {
+  /* Adjust the width of the send button */
+  width: 150px;
+}
+
+/* Red icons */
+.info-item svg {
+  color: #d12626; /* Red color for icons */
+  margin-bottom: 10px; /* Add space at the bottom of the icon */
+}
+
+/* Center the content within the contact section */
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Set a fixed width and height for the boxes and center align the content */
+.contact .info-item {
+  width: 250px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  padding: 20px;
+  padding-bottom: 50px; /* Add more space at the bottom */
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+}
+
+/* Adjust the padding between the elements */
+.contact .info-item h3 {
+  margin-bottom: 5px; /* Reduce the space below the heading */
+}
+
+.contact .info-item p {
+  margin: 0; /* Remove default margin from paragraphs to reduce space */
+}
+
+/* Add space at the bottom of the boxes on larger screens */
+.contact .info-item {
+  margin-bottom: 30px; /* Adjust the value as needed */
+}
+
+/* Add space at the bottom of the boxes when stacked */
+@media (max-width: 991px) {
+  .contact .info-item {
+    margin-bottom: 30px; /* Adjust the value as needed */
+  }
+}
+
+/* Center the boxes underneath the headings when stacked */
+@media (max-width: 991px) {
+  .contact .col-md-4 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Adjust the margin between the boxes on larger screens */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact .info-item {
+    margin-right: 20px; /* Adjust the margin as needed */
+  }
+}
+
+/* Add space at the bottom of the boxes on larger screens */
+@media (min-width: 1200px) {
+  .contact .info-item {
+    margin-bottom: 100px; /* Adjust the value as needed */
+  }
+}
+
+
+/* Style for the footer section */
+#footer {
+  background-color: #333; /* Set the background color for the footer */
+  color: #fff; /* Set the text color for the footer */
+  padding: 50px 0; /* Add some vertical padding to the footer */
+}
+
+/* Style for the footer top section */
+.footer-top {
+  padding: 40px 0; /* Add some padding to the top and bottom */
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Add a smooth color transition on hover */
+}
+
+.footer-links a:hover {
+  color: #d12626; /* Change the link color on hover */
+}
+
+/* Style for the footer heading */
+.footer-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Style for the footer contact information */
+.footer-contact-info {
+  margin-bottom: 20px;
+}
+
+.footer-contact-info p {
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  margin-right: 20px; /* Adjust the spacing as needed */
+  margin-bottom: 50px; /* Add space at the bottom */
+}
+
+/* Custom CSS for centering columns on smaller screens when stacked */
+@media (max-width: 991.98px) {
+  .footer .footer-links {
+    text-align: center;
+  }
+
+  .footer .footer-links ul {
+    display: inline-block;
+    padding-left: 0;
+  }
+
+  .footer .footer-links li {
+    display: block;
+  }
+
+  .footer .footer-links a {
+    display: block;
+    text-align: center;
+  }
+
+  .footer .footer-links p {
+    text-align: center;
+  }
+}
+
+.pad-bot-50 {
+    padding-bottom: 30px;
+}
+/* Add styles for the contact form section */
+#form {
+  background-color: #fff; /* White background */
+  padding: 50px 0;
+}
+
+#contact-form-section {
+    margin-top: 100px;
+    margin-bottom: 100px; /* Adjust the margin as needed */
+  }
+
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none; /* Remove border */
+  border-bottom: 2px solid #ccc; /* Add bottom border */
+  background-color: transparent; /* Transparent background */
+  transition: border-color 0.3s ease; /* Add transition for animation */
+}
+
+/* Animation for input and textarea when focused */
+input:focus, textarea:focus {
+  border-color: #d12626; /* Change border color when focused */
+  outline: none; /* Remove default focus outline */
+  transform: translateY(-5px); /* Move the element up */
+}
+
+/* Style for the "How can we help?" section */
+#contact-form-section h3 {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Style for the submit button */
+.submit-button {
+  padding: 15px 60px; /* Adjust the padding to make the button wider */
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #d12626;
+  color: #fff;
+  border: none;
+  border-radius: 50px; /* Increase the border radius for a more rounded look */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make the button span the full width of its container */
+  max-width: 200px; /* Set a maximum width for the button */
+  margin-top: 20px; /* Add some space at the top of the button */
+}
+
+
+.submit-button:hover {
+  background-color: #b11c1c;
+}
+
+/* Add space at the bottom of the button */
+.submit-button {
+  margin-top: 20px;
+}
+
+
+#contact-form-section .col-md-12 {
+  text-align: center;
+}
+
+#contact-form-section h2.section-heading {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-align: center; /* Center the main heading */
+  color: #252B48;
+}
+
+#contact-form-section h4.section-subheading {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #61677A;
+
+}
+
+#contact-form-section label {
+  font-size: 18px;
+  margin-top: 30px;
+  text-align: left; /* Keep "How can we help?" left-aligned */
+}
+
+.contact-form {
+  margin-top: 100px; /* Add some margin between the headings and the form */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add animation */
+@keyframes swipeUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animated {
+  animation: swipeUp 1.5s ease 1;
+}
+
+/* Increase font size for the text in the first navigation bar */
+.region-top-bar .menu a {
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+/* Add left padding to the first navigation bar */
+.region-top-bar .menu {
+  padding-left: 30px; /* Adjust the padding value as needed */
+}
+
+
+/* Add the scroll-to-top button styling */
+.scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d12626;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    font-size: 20px;
+    z-index: 9999;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-top:hover {
+    background-color: #b11c1c;
+    transform: scale(1.1);
+}
+
+/* Style for the social icons */
+.social-icon svg {
+    fill: #B7B7B7; /* Change this color to your desired color */
+}
+
+
