@@ -19,8 +19,6 @@ app.config['MAIL_USE_SSL'] = True   # SSL is required
 
 mail = Mail(app)
 
-# Route to handle form submission
-
 
 @app.route("/")
 def home():
@@ -52,15 +50,11 @@ def submit_form():
 
         try:
             mail.send(msg)
-            print("Worked")
-            return "Email sent successfully!"
-        except Exception as e:
-            print("Didnt work")
-            print(f"Error sending email: {str(e)}")
-            return f"Error sending email: {str(e)}"
+            print("Sent successfully!")
 
+        except Exception as e:
+            print(f"Error sending email: {str(e)}")
 
 
 if __name__ == "__main__":
     app.run(debug=False)
-
