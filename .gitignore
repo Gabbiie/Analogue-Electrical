@@ -139,3 +139,5 @@ dmypy.json
 .idea/tasks.xml
 .idea/dictionaries
 .idea/shelf
+
+.env

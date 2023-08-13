@@ -1,9 +1,12 @@
 from flask import Flask, render_template, request
 from flask_mail import Mail, Message
+from dotenv import load_dotenv
 import os
 
+load_dotenv(".env")
+
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.getenv("flask_key")
+app.config['SECRET_KEY'] = os.getenv("FLASK_KEY")
 
 # Configure Flask-Mail
 app.config['MAIL_SERVER'] = os.getenv("mail_server")  # Replace with your SMTP server
