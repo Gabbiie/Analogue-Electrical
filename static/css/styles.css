@@ -531,14 +531,33 @@ input:focus, textarea:focus {
 /* Make text size bigger on smaller screens */
 @media (max-width: 767.98px) {
   body {
-    font-size: 18px; /* Adjust the font size as needed */
+    font-size: 14px; /* Adjust the font size as needed */
   }
 }
 
+/* Styles for smaller screens (max-width: 767.98px) */
 @media (max-width: 767.98px) {
-  h1, h2, h3, h4, h5, h6 {
-    font-size: 24px; /* Adjust the font size as needed */
-  }
+    h1 {
+        font-size: 24px; /* Adjust the font size for h1 on smaller screens */
+    }
+
+    h2 {
+        font-size: 22px; /* Adjust the font size for h2 on smaller screens */
+    }
+
+    h3 {
+        font-size: 20px; /* Adjust the font size for h3 on smaller screens */
+    }
+
+    h4 {
+        font-size: 18px; /* Adjust the font size for h4 on smaller screens */
+    }
+
+    h5 {
+        font-size: 16px; /* Adjust the font size for h4 on smaller screens */
+    }
+
+
 }
 
 /* Style for the flex container */
