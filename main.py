@@ -32,6 +32,7 @@ def contact():
 
 
 # Route to handle form submission
+# Route to handle form submission
 @app.route('/submit_form', methods=['POST'])
 def submit_form():
     if request.method == 'POST':
@@ -52,9 +53,15 @@ def submit_form():
             mail.send(msg)
             print("Sent successfully!")
 
+            # Return a success response
+            return "Form submitted successfully. We will get in touch with you shortly."
+
         except Exception as e:
             print(f"Error sending email: {str(e)}")
 
+            # Return an error response
+            return "An error occurred while processing your form. Please try again later."
+
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)

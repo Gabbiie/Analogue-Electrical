@@ -5,7 +5,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Style for other text using Montserrat Regular */
-body, p, span, div {
+body, p, span,div,.footer-links a,.footer-links p,.footer-heading {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 
@@ -232,14 +232,14 @@ a {
 }
 
 /* Add space at the bottom of the boxes when stacked */
-@media (max-width: 991px) {
+@media (max-width: 746px) {
   .contact .info-item {
     margin-bottom: 30px; /* Adjust the value as needed */
   }
 }
 
 /* Center the boxes underneath the headings when stacked */
-@media (max-width: 991px) {
+@media (max-width: 746px) {
   .contact .col-md-4 {
     display: flex;
     justify-content: center;
@@ -247,7 +247,7 @@ a {
 }
 
 /* Adjust the margin between the boxes on larger screens */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 746px) and (max-width: 1199px) {
   .contact .info-item {
     margin-right: 20px; /* Adjust the margin as needed */
   }
@@ -320,7 +320,7 @@ a {
 }
 
 /* Custom CSS for centering columns on smaller screens when stacked */
-@media (max-width: 991.98px) {
+@media (max-width: 991px) {
   .footer .footer-links {
     text-align: center;
   }
@@ -503,4 +503,57 @@ input:focus, textarea:focus {
     fill: #B7B7B7; /* Change this color to your desired color */
 }
 
+/* Increase font size for the text in the first navigation bar on smaller screens */
+@media (max-width: 767.98px) {
+  .region-top-bar .menu a {
+    font-size: 20px; /* Adjust the font size as needed */
+  }
+}
 
+/* Increase font size for the text in the footer on smaller screens */
+@media (max-width: 767.98px) {
+  .footer .footer-links a,
+  .footer .footer-links p {
+    font-size: 20px; /* Adjust the font size as needed */
+  }
+}
+
+/* Increase the size of the scroll-up button on smaller screens */
+@media (max-width: 767.98px) {
+  .scroll-top {
+    width: 60px;
+    height: 60px;
+    line-height: 35px;
+    font-size: 24px;
+  }
+}
+
+/* Make text size bigger on smaller screens */
+@media (max-width: 767.98px) {
+  body {
+    font-size: 20px; /* Adjust the font size as needed */
+  }
+}
+
+@media (max-width: 767.98px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 26px; /* Adjust the font size as needed */
+  }
+}
+
+/* Style for the flex container */
+.flex-container {
+  display: flex;
+  justify-content: space-between; /* Spread items evenly within the container */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+/* Adjust the spacing between form fields */
+.row .form-group {
+  margin-bottom: 10px; /* Add spacing between rows */
+}
+
+/* Ensure the last field in the row doesn't have bottom margin */
+.row .form-group:last-child {
+  margin-bottom: 0;
+}

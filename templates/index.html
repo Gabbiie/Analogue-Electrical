@@ -293,27 +293,35 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2 class="section-heading animated">Get in touch</h2>
+            <h2 class="section-heading animated">Get in Touch</h2>
             <h4 class="section-subheading">Let us know how we can help you</h4>
           </div>
         </div>
         <form class="contact-form" action="/submit_form" method="POST">
+          <!-- Name and Surname on the same row -->
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
               </div>
+            </div>
+            <div class="col-md-6">
               <div class="form-group">
                 <label for="surname">Surname</label>
                 <input type="text" id="surname" name="surname" required>
               </div>
             </div>
+          </div>
+          <!-- Phone and Email on the same row -->
+          <div class="row">
             <div class="col-md-6">
               <div class="form-group">
                 <label for="phone">Phone</label>
                 <input type="tel" id="phone" name="phone" required>
               </div>
+            </div>
+            <div class="col-md-6">
               <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
@@ -334,6 +342,7 @@
         </form>
       </div>
     </section>
+
 
 
 {% include "footer.html" %}

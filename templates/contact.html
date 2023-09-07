@@ -1,49 +1,58 @@
  {% include "header.html" %}
 
- <section id="contact-form-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="section-heading animated">Get in Touch</h2>
-        <h4 class="section-subheading">Let us know how we can help you</h4>
-      </div>
-    </div>
-    <form class="contact-form" action="/submit_form" method="POST">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="surname">Surname</label>
-            <input type="text" id="surname" name="surname" required>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-        </div>
-      </div>
+  <section id="contact-form-section">
+    <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <label for="message">How can we help you?</label>
-          <textarea id="message" name="message" rows="3" required></textarea>
+          <h2 class="section-heading animated">Get in Touch</h2>
+          <h4 class="section-subheading">Let us know how we can help you</h4>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <button type="submit" class="submit-button">Send</button>
+      <form class="contact-form" action="/submit_form" method="POST">
+        <!-- Name and Surname on the same row -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="surname">Surname</label>
+              <input type="text" id="surname" name="surname" required>
+            </div>
+          </div>
         </div>
-      </div>
-    </form>
-  </div>
-</section>
+        <!-- Phone and Email on the same row -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <label for="message">How can we help you?</label>
+            <textarea id="message" name="message" rows="3" required></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <button type="submit" class="submit-button">Send</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
 
  {% include "footer.html" %}
